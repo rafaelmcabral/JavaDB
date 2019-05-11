@@ -1,6 +1,5 @@
 package javadb.testes;
 
-import java.util.List;
 import java.util.Scanner;
 
 import javadb.dao.ClienteDao;
@@ -41,6 +40,7 @@ public class TesteExcluirCliente {
 			numero = input.nextLong();
 		} while (!(numero > 0));
 		
+		input.close();
 		return numero;
 	}
 }
